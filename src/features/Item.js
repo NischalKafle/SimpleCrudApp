@@ -32,7 +32,7 @@ function Item() {
   }
   return (
     <div  >
-      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center',marginTop:'5px'}}  >
+      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center',marginTop:'5px',}}  >
         <input  value={name}
           type="text"
           placeholder="Name..."
@@ -54,9 +54,9 @@ function Item() {
           Add User
         </button>
       </div>
-      <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:'10px'}} >
+      <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:'10px',}} >
       {userList.map((user) => (
-          <div class="card" key={user.id} style={{margin:'2px'}}>
+          <div class="card" key={user.id} style={{margin:'2px',border:'2px black solid'}}>
           <div class="card-body">
 
             <h1>{user.name}</h1>
